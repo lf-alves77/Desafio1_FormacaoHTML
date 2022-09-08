@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Módulo I - Primeiros Passos com HTML</title>
+
+</head>
+
+<body>
+    <h1>Primeiros Passos com HTML</h1>
+
+    <hr />
+
+    <h2 id:"inicio">Índice</h2>
+
+        <ul>    
+            <li><a href="#computer_history"><i><strong>História dos Computadores</strong></i></a></li>
+            <li><a href="#what's_clients"><i><strong>O que são Clients?</strong></i></a></li>
+            <li><a href="#what's_server"><i><strong>O que são Servers?</strong></i></a></li>
+            <li><a href="#basic_html_structures"><i><strong>Como é uma estrutura básica de HTML?</strong></i></a></li>
+            <li><a href="#diferences_list"><i><strong>Entendendo a diferença entre listas ordenadas e não ordenadas?</strong></i></a></li>
+            <li><a href="#references_list"><i><strong>Links de Referência</strong></i></a>
+        </ul>
+    
+
+        <h2 id="computer_history">História dos Computadores</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Os primeiros computadores surgiram na década de 1940 e possuíam somente dois níveis de linguagem: o de máquina, no qual toda a programação era feita, e o da lógica digital, onde os programas eram efetivamente executados.
+
+            Em 1951, foi projetado um computador de hardware simplificado, com três níveis, que executava um pequeno conjunto de microinstruções armazenadas, o que exigia menos circuitos eletrônicos. A partir daí começou a evolução das linguagens e as arquiteturas das máquinas, impulsionadas, principalmente, pelo aparecimento de um novo conceito na história da computação: os Sistemas Operacionais.
+            
+            1956 a 1963: nesse período, foram produzidos os primeiros computadores com a tecnologia do transistor, as primeiras impressoras, fitas magnéticas entre outros.
+            
+            1964 a 1970: surgem computadores mais rápidos por conta dos circuitos integrados, dos sistemas operacionais e das linguagens de programação.
+            
+            1970 até os dias de hoje: inicio das tecnologias LSI, VLSI e ULSI, que abrigam milhões de componentes eletrônicos em um pequeno espaço ou chip. Dois avanços que configuram um divisor de águas são o processamento paralelo, que quebrou o paradigma de von Neumann, e a tecnologia dos supercondutores.
+            
+            Veja alguns dos avanços tecnológicos da história dos computadores:
+
+            <ul>
+                <li>MARK 1 – 1944</li>
+                <li>ENIAC – 1946</li>
+                <li>EDVAC – 1946</li>
+                <li>TRANSISTOR – 1947</li>
+                <li>LEO – 1951</li>
+                <li>WHIRLWIND – 1953</li>
+                <li>CIRCUITO INTEGRADO – 1958</li>
+                <li>PDP-1 – 1960</li>
+                <li>ATLAS – 1962</li>
+                <li>PDP-8 – 1965</li>
+                <li>SYSTEM 360 – 1965</li>
+                <li>MOUSE – 1968</li>
+                <li>MICROPROCESSADOR – 1971</li>
+                <li>ALTAIR 8800 – 1974</li>
+                <li>MICROSOFT – 1975</li>
+                <li>Apple II – 1977</li>
+                <li>DISQUETE DE 31/2 – 1981</li>
+                <li>IBM-PC – 1981</li>
+                <li>XEROX 8010 – 1981</li>
+                <li>OSBORNE 1 – 1981</li>
+                <li>WORD – 1983</li>
+                <li>MACINTOSH – 1984</li>
+                <li>IMPRESSORA A LASER – 1984</li>
+                <li>WINDOWS – 1985</li>
+                <li>CD-ROM – 1985</li>
+                <li>DESKPRO 386 – 1986</li>
+                <li>Internet – 1990</li>
+                <li>iPod – 2001</li>
+                <li>MICRO DE 100 DÓLARES – 2005</li>
+                
+                
+
+            </ul>
+
+        </p>
+
+
+        <h2 id="what's_clients">O que são Clients?</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <ul>
+            <li>Inicia pedidos para servidores;</li>
+            <li>Espera por respostas;</li>
+            <li>Recebe respostas;</li>
+            <li>Conecta-se a um pequeno número de servidores de uma só vez ;</li>
+            <li>Normalmente interage diretamente com os servidores através de seu software aplicação especifico, que lhe possibilita a comunicação com o servidor;</li>
+            <li>Utiliza recursos da rede.</li>
+
+        </ul>
+
+
+        <h2 id="what's_server">O que são Servidores?</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <ul>
+            <li>Sempre espera por um pedido de um cliente;</li>
+            <li>Atende os pedidos e, em seguida, responde aos clientes com os dados solicitados;</li>
+            <li>Podem se conectar com outros servidores para atender uma solicitação específica do cliente; jamais podem se comunicar.</li>
+            <li>Fornece recursos de rede.</li>
+            <li>Normalmente interage diretamente com os usuários finais através de qualquer interface com o usuário;</li>
+            <li>Estrutura o sistema</li>
+
+        </ul>
+
+        <h2>Estrutura Básica do HTML</h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Sempre que iniciamos um novo arquivo, a primeira coisa a fazer é escrever a estrutura HTML. Trata-se de algumas tags que todos os documentos HTML devem ter. Alguns desenvolvedores costumam ter um arquivo HTML já salvo para utilizar e poupar o trabalho de ficar escrevendo as mesmas tags toda vez que for criar um HTML novo.
+
+            Vamos ao código da estrutura:
+        </p>
+
+        <img src="estrutura_html.png">
+        
+        <h3>Explicando a estrutura básica do HTML</h3>
+        <p>Note que a tag <HTML> envolve todos os demais códigos HTML, com exceção da tag <Doctype>. Isso porque com a tag <HTML> estamos informando ao navegador que o código que vamos trabalhar será da linguagem HTML. Se fossemos utilizar outra linguagem como o PHP por exemplo teríamos que colocar o código dentro das tags <?php ?>.
+
+            Bom, dentro das tags HTML temos outras duas tags. A tag <head> e a tag <body>. Head vem do inglês e significa cabeça e body significa corpo. Essa nomenclatura faz muito sentido já que é na tag head que guardamos as meta informações, que são informações que são usadas para determinados objetivos, mas que não aparecem no site quando o visualizamos no navegador.
+            
+            (Box) O que são metadados? Para entender melhor o que significa metadados, podemos pensar no exemplo de fotografias que tiramos com o celular. Ao abrir uma fotografia, o que vemos é a imagem do que foi fotografado, porém, existem várias outras informações que foram gravadas em seu dispositivo além da imagem, como a data e hora que a fotografia foi tirada, o modelo do celular, modelo da lente, tamanho da imagem, tamanho do arquivo e até a localização de onde a fotografia foi feita. Essas informações não aparecem quando abrimos a fotografia, porém são muito úteis para, por exemplo, organizar os arquivos por tamanho, data, localização, etc.
+            
+            Assim como nós, o HTML tem um corpo embaixo da cabeça. Ou seja, abaixo da tag head encontramos a tag body. É na tag body que colocamos tudo o que queremos que apareça na tela do navegador, como o fundo, os textos, imagens, links, etc.
+            
+            Fora essa estrutura básica, é preciso adicionar o seguinte código antes de todos os demais:
+        </p>
+        
+        <img src="estrutura_html2.png">
+        
+        <h3>Declaração Doctype</h3>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Este código é uma declaração do tipo de documento que estamos criando. Ele existe porque cada navegador, especialmente antigamente, costumava exibir o HTML de forma diferente uns dos outros. Ou seja, quando você abria seu site em um navegador, ele ficava de um jeito, quando abria em outro navegador, ficava de outro jeito. Para resolver esse problema foi criada essa declaração, que passa parâmetros para que os navegadores sigam um mesmo parâmetro de exibição do HTML. Assim, seu arquivo HTML será exibido da mesma forma em diferentes navegadores.
+        </p>
+
+        <h3>Tag Title</h3>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Antes de finalizar vamos colocar uma cereja no bolo. Vamos adicionar a tag title dentro da tag head. Com essa tag podemos definir um título para nossa página que aparecerá na aba do navegador. Veja o código:</p>
+        <img src="estrutura_html3.png">
+
+        <h2 id="diferences_list">Diferença de Listas</h2>
+        <h3>Listas Ordenadas</h3>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>Utilizada para marcar uma ordenação no conteúdo. Quando a informação tem uma seqüência a ser respeitada. Para iniciar a marcação utilizamos o elemento ol. Depois para marcamos os itens das listas, utilizamos o elemento li. As listas são renderizadas com uma marcação seqüencial antes do conteúdo da lista. Veja o exemplo:</p>
+        <img src="listas1.png">
+        <h3>Listas não-ordenadas.</h3>
+        <p>O tipo de lista mais comum de se utilizar em sites são as listas não-ordenadas. Esse tipo de lista é utilizado quando a informação a ser mostrada não segue uma seqüência. Para iniciar uma lista não ordenada usamos o elemento ol. Para marcar os itens dessa lista usamos o mesmo elemento li. Veja o exemplo:</p>
+        <img src="listas2.png">
+
+        <h2 id="references_list">Listas de Referências:</h2>
+        <ol>
+            <li><a href="https://blog.certisign.com.br/quando-surgiram-os-primeiros-computadores/">Primeiros Computadores</a> </li>
+            <li><a href="https://pt.wikipedia.org/wiki/Modelo_cliente%E2%80%93servidor">Modelo Cliente Servidor</a> </li>
+            <li><a href="https://www.kadunew.com/blog/html/tipos-de-listas-em-xhtml">Tipos de Listas</a> </li>
+            <li><a href="https://www.homehost.com.br/blog/tutoriais/html-img/">Estrutura HTML</a> </li>
+
+
+            
+        </ol>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
